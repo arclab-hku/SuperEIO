@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="SuperEIO">
+  <meta name="keywords" content="SLAM, Event Camera, Robotics">
+
+  <!-- 确保您已经设置了视口的meta标签用于自适应屏幕大小的 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>HKU-ArcLab | SuperEIO</title>
+  <meta name="author" content="HKU-ArcLab " />
+
+  <!-- OpenGraph 用于更新页面-->
+  <meta property="og:site_name" content="HKU-ArcLab | SuperEIO" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="HKU-ArcLab | SuperEIO" />
+  <meta property="og:description" content="Welcome to Our SuperEIO 😊" />
+  <meta property="og:image" content="https://kwanwaipang.github.io/Poster_files/hku_logo.jpg" />
+
+  <meta property="og:locale" content="en" />
+
+  <meta name="google-site-verification" content="Jtxa1xy6N3_2RjVVFrZgXjPZ0AHklxJXQ1eQ6QXNWr8" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1QX9D95NS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-R1QX9D95NS');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="https://kwanwaipang.github.io/Poster_files/hku_logo.jpg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          
+          <a class="navbar-item" href="https://kwanwaipang.github.io/Mono-EIO">
+            Mono-EIO
+          </a>
+
+          <a class="navbar-item" href="https://kwanwaipang.github.io/PL-EVIO">
+            PL-EVIO
+          </a>
+
+          <a class="navbar-item" href="https://kwanwaipang.github.io/ESVIO">
+            ESVIO
+          </a>
+
+
+          <a class="navbar-item" href="https://kwanwaipang.github.io/EVI-SAM">
+            EVI-SAM
+          </a>
+
+          <a class="navbar-item" href="https://kwanwaipang.github.io/DEIO">
+            DEIO
+          </a>
+
+          <a class="navbar-item" href="https://arclab-hku.github.io/SuperEIO">
+            SuperEIO
+          </a>
+
+          <a class="navbar-item" target="_blank" href="https://arclab-hku.github.io/ecmd/">
+            ECMD Dataset
+          </a>
+
+          <a class="navbar-item" target="_blank" href="https://github.com/arclab-hku/Event_based_VO-VIO-SLAM">
+            HKU Dataset
+          </a>
+
+          <!-- <a class="navbar-item" target="_blank" href="https://kwanwaipang.github.io/File/Representative_works/Representative_works.html">
+            Representative Works
+          </a> -->
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SuperEIO: Self-Supervised Event Inertial Odometry </h1>
+
+          <!-- 作者 -->
+          <div class="is-size-5 publication-authors">
+
+            <span class="author-block">
+              <a href="https://github.com/cpymaple" target="_blank">Peiyu Chen</a><sup>1*</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://github.com/zerolfl" target="_blank">Fuling Lin</a><sup>1*</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://kwanwaipang.github.io/" target="_blank">Weipeng Guan</a><sup>1</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://arclab.hku.hk/PengLu.html" target="_blank">Peng Lu</a><sup>1</sup>
+            </span>
+            
+          </div>
+          
+          <!-- 单位 -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Hong Kong</span>
+            <br>
+            <span class="author-block"><sup>*</sup>Equal Contribution</span>
+          </div>
+
+          <!-- 各种link -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                    target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href=" "
+                    target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/arclab-hku/SuperEIO"
+                    target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/arclab-hku/Event_based_VO-VIO-SLAM?tab=readme-ov-file#Dataset-for-stereo-evio"
+                    target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 参考代码：https://github.com/nerfies/nerfies.github.io/blob/main/index.html -->
+<!-- 对应网页效果：https://nerfies.github.io/ -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+
+        <!-- 首页图 -->
+        <img src="./latex/image/firstpic.png"
+        class="interpolation-image"
+        alt="Interpolation end reference image."/>
+
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          ***
+          The Abstract
+          ***
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video Demo</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/XqAm1q0alNY?si=GcpKk04UN1iawET2"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- 引用格式 -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      ******
+    </code></pre>
+  </div>
+</section>
+
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+            <br>
+            This website template is from <a
+            href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+            We sincerely thank the author for developing and open-sourcing this template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+
+  // 当 iframe 加载完成后执行
+  document.getElementById('videoIframe1').onload = function() {
+      // 隐藏加载中的动图
+      document.getElementById('loadingImage1').style.display = 'none';
+      // 显示 iframe
+      document.getElementById('videoIframe1').style.display = 'block';
+  };
+
+  document.getElementById('videoIframe2').onload = function() {
+      // 隐藏加载中的动图
+      document.getElementById('loadingImage2').style.display = 'none';
+      // 显示 iframe
+      document.getElementById('videoIframe2').style.display = 'block';
+  };
+
+  document.getElementById('videoIframe3').onload = function() {
+      // 隐藏加载中的动图
+      document.getElementById('loadingImage3').style.display = 'none';
+      // 显示 iframe
+      document.getElementById('videoIframe3').style.display = 'block';
+  };
+
+  document.getElementById('videoIframe4').onload = function() {
+      // 隐藏加载中的动图
+      document.getElementById('loadingImage4').style.display = 'none';
+      // 显示 iframe
+      document.getElementById('videoIframe4').style.display = 'block';
+  };
+
+  document.getElementById('videoIframe5').onload = function() {
+      // 隐藏加载中的动图
+      document.getElementById('loadingImage5').style.display = 'none';
+      // 显示 iframe
+      document.getElementById('videoIframe5').style.display = 'block';
+  };
+
+
+</script>
+
+
+<!-- 用于添加滑块可视化对比运动补偿效果 -->
+<script src="static/js/script.js"></script>
+<script>
+  new BeforeAfter({
+      id: '#example1'
+  });
+  new BeforeAfter({
+      id: '#example2'
+  });
+</script>
+
+</body>
+</html>
