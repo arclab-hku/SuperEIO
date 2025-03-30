@@ -176,7 +176,7 @@
                 </a>
               </span>
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href=" "
                     target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
@@ -185,7 +185,7 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/arclab-hku/SuperEIO"
@@ -198,7 +198,7 @@
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/arclab-hku/Event_based_VO-VIO-SLAM?tab=readme-ov-file#Dataset-for-stereo-evio"
                     target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
@@ -207,6 +207,7 @@
                   </span>
                   <span>Data</span>
                   </a>
+              </span> -->
             </div>
 
           </div>
@@ -227,22 +228,48 @@
       <div class="column is-four-fifths">
 
         <!-- 首页图 -->
-        <img src="./latex/image/firstpic.png"
+        <img src="./static/img/framework.png"
         class="interpolation-image"
         alt="Interpolation end reference image."/>
 
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          ***
-          The Abstract
-          ***
+        Event cameras asynchronously output low-latency event streams, promising for state estimation in high-speed motion and challenging lighting conditions.
+        As opposed to frame-based cameras, the motion-dependent nature of event cameras presents persistent challenges in achieving robust event feature detection and matching.
+        In recent years, learning-based approaches have demonstrated superior robustness over traditional handcrafted methods in feature detection and matching, particularly under aggressive motion and HDR scenarios.
+        In this paper, we propose SuperEIO, a novel framework that leverages the learning-based event-only detection and IMU measurements to achieve event-inertial odometry.
+        Our event-only feature detection employs a convolutional neural network under continuous event streams. 
+        Moreover, our system adopts the graph neural network to achieve event descriptor matching for loop closure.
+        The proposed system utilizes TensorRT to accelerate the inference speed of deep networks, which ensures low-latency processing and robust real-time operation on resource-limited platforms.
+        Besides, we evaluate our method extensively on multiple public datasets, demonstrating its superior accuracy and robustness compared to other state-of-the-art event-based methods.
         </div>
+
+        <h2 class="title is-2">Network Architecture</h2>
+        <div class="content has-text-justified">
+          <p>
+            The Architecture of Our Event Feature Detector and comparison with Other Event-based Detector
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/img/feature_detection.png"/>
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            The Architecture of Our Event Descriptor Matcher and Loop Closure Performance
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/img/descriptor_matching.png"/>
+        </div>
+
       </div>
     </div>
     <!--/ Abstract. -->
 
+
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video Demo</h2>
         <div class="publication-video">
@@ -251,7 +278,7 @@
         </div>
 
       </div>
-    </div>
+    </div> -->
 
   </div>
 </section>
