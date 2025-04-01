@@ -68,7 +68,7 @@ We present the network architectures of our deep event feature detector and desc
 <div align="center">
     <img src="https://github.com/cpymaple/paper_pic/blob/main/supereio/super_eventpoint.png" width="49%" />
     <img src="https://github.com/cpymaple/paper_pic/blob/main/supereio/feature_detection.png" width="49%" />
-    <p>The Architecture of Our Event Feature Detector and comparison with Other Event-based Detector</p>
+    <p>The Architecture of Our Event Feature Detector and Comparison with Other Event-based Detector</p>
 </div>
 
 <div align="center">
@@ -80,17 +80,13 @@ We present the network architectures of our deep event feature detector and desc
 
 ## 5. Citation
 <!-- SuperEIO is published in [Journal/Conference Name] with [Presentation Option]. (The [Journal/Conference Name] pdf is available [here](YOUR_PDF_LINK) and the arxiv pdf is available [here](YOUR_ARXIV_LINK)). -->
-SuperEIO is available in the [Arxiv](YOUR_PDF_LINK).
+SuperEIO is available in the [Arxiv](http://arxiv.org/abs/2503.22963).
 ~~~
 @article{SuperEIO,
-  title={SuperEIO: Self-Supervised Event Inertial Odometry},
-  author={Your Name and Co-Developer Name},
-  journal={Journal/Conference Name},
-  year={2023},
-  volume={X},
-  number={X},
-  pages={XXXX-XXXX},
-  publisher={Publisher Name}
+  title={SuperEIO: Self-Supervised Event Feature Learning for Event Inertial Odometry},
+  author={Chen, Peiyu and Lin, Fuling and Guan, Weipeng and Lu, Peng},
+  journal={arXiv preprint arXiv:2503.22963},
+  year={2025}
 }
 ~~~
 
@@ -100,7 +96,7 @@ If you feel like SuperEIO has indeed helped in your current research or work, a 
 The full codebase will be released upon paper acceptance. For immediate inquiries, please contact the authors.
 
 ## 7. Acknowledgments 
-This work was supported by General Research Fund under Grant 17204222, and in part by the Seed Fund for Collaborative Research and General Funding Scheme-HKU-TCL Joint Research Center for Artificial Intelligence. We gratefully acknowledge [sair-lab/AirSLAM](https://github.com/sair-lab/AirSLAM) for providing the Superpoint TensorRT acceleration template, which significantly enhanced the compute effiency of our system.
+This work was supported by the General Research Fund under Grant 17204222, and in part by the Seed Fund for Collaborative Research and General Funding Scheme-HKU-TCL Joint Research Center for Artificial Intelligence. We gratefully acknowledge [sair-lab/AirSLAM](https://github.com/sair-lab/AirSLAM) for providing the Superpoint TensorRT acceleration template, which significantly enhanced the compute effiency of our system.
 
 ## 8. License
-The source code is released under GPLv3 license. We are still working on improving the code reliability. If you are interested in our project for commercial purposes, please contact [Dr. Peng LU](https://arclab.hku.hk/People.html) for further communication.
+The source code is released under the GPLv3 license. We are still working on improving the code reliability. If you are interested in our project for commercial purposes, please contact [Dr. Peng LU](https://arclab.hku.hk/People.html) for further communication.
