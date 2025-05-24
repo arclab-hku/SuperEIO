@@ -77,8 +77,17 @@ We present the network architectures of our deep event feature detector and desc
     <p>The Architecture of Our Event Descriptor Matcher and Loop Closure Performance</p>
 </div>
 
+## 5. Video Demo
+We present video demo of our SuperEIO system, showcasing its visulization performance on both hdr_boxes and aggressive_flight scenarios.
 
-## 5. Citation
+<div align="center">
+    <img src="https://github.com/cpymaple/paper_pic/blob/main/supereio/Supereio240hdrboxes.gif" width="49%" />
+    <img src="https://github.com/cpymaple/paper_pic/blob/main/supereio/Supereioaggflight.gif" width="49%" />
+    <p>The Video Demo of Our SuperEIO on Hdr_boxes and Aggressive_flight Sequences</p>
+</div>
+
+
+## 6. Citation
 <!-- SuperEIO is published in [Journal/Conference Name] with [Presentation Option]. (The [Journal/Conference Name] pdf is available [here](YOUR_PDF_LINK) and the arxiv pdf is available [here](YOUR_ARXIV_LINK)). -->
 SuperEIO is available in the [Arxiv](http://arxiv.org/abs/2503.22963).
 ~~~
@@ -92,11 +101,11 @@ SuperEIO is available in the [Arxiv](http://arxiv.org/abs/2503.22963).
 
 If you feel like SuperEIO has indeed helped in your current research or work, a simple star or citation of our works should be the best affirmation for us. :blush: 
 
-## 6. Coming Soon
+## 7. Coming Soon
 The full codebase will be released upon paper acceptance. For immediate inquiries, please contact the authors.
 
-## 7. Acknowledgments 
+## 8. Acknowledgments 
 This work was supported by the General Research Fund under Grant 17204222, and in part by the Seed Fund for Collaborative Research and General Funding Scheme-HKU-TCL Joint Research Center for Artificial Intelligence. We gratefully acknowledge [sair-lab/AirSLAM](https://github.com/sair-lab/AirSLAM) for providing the Superpoint TensorRT acceleration template, which significantly enhanced the compute effiency of our system.
 
-## 8. License
+## 9. License
 The source code is released under the GPLv3 license. We are still working on improving the code reliability. If you are interested in our project for commercial purposes, please contact [Dr. Peng LU](https://arclab.hku.hk/People.html) for further communication.
