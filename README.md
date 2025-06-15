@@ -2,7 +2,7 @@
 
 # SuperEIO: Self-Supervised Event Feature Learning for Event Inertial Odometry 
 
-**Peiyu Chen**<sup>†</sup>, **Fuling Lin**<sup>†</sup>, **Weipeng Guan**, **Peng Lu**<sup>*</sup>
+**Peiyu Chen**<sup>†</sup>, **Fuling Lin**<sup>†</sup>, **Weipeng Guan**, **Yi Luo**, **Peng Lu**<sup>*</sup>
 
 **Adaptive Robotic Controls Lab (ArcLab)**, **The University of Hong Kong**.
 
