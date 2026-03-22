@@ -40,6 +40,12 @@ cd ~/catkin_ws_supereio/src
 git clone git@github.com:your-repo/SuperEIO.git --recursive
 ~~~
 
+You should modifie your `.bashrc` file through `gedit ~/.bashrc`, add the following codes in it:
+~~~
+source ~/catkin_ws_supereio/devel/setup.bash
+alias supereiobuild='cd /home/YOUR_name/catkin_ws_supereio && catkin build -j8 supereio_ba event_detector loop_closure -DCMAKE_BUILD_TYPE=Debug'
+alias supereiorun='cd /home/YOUR_name/catkin_ws_supereio/src/SuperEIO/script && sh run.sh'
+~~~
 
 After that, run the `source ~/.bashrc` and `supereiobuild` command in your terminal.
 
@@ -48,8 +54,13 @@ After that, run the `source ~/.bashrc` and `supereiobuild` command in your termi
 ### 3.1 Run on Examples
 You can test our SuperEIO on [hku_agg_translation](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM). After you download bag files, just run the example:
 ~~~
-roslaunch supereio_estimator supereio.launch 
+roslaunch supereio_ba hku_stereo.launch
 rosbag play YOUR_DOWNLOADED.bag
+~~~
+
+or you can just revise the script file and run in your terminal:
+~~~
+supereiorun
 ~~~
 
 ### 3.2 Run on Your Datasets
@@ -57,25 +68,25 @@ To run the system on your dataset, you need to create a corresponding configurat
 
 Following that, you can execute the provided command to run SuperEIO on your dataset:
 ~~~
-roslaunch supereio_estimator supereio.launch
+roslaunch supereio_ba YOUR_DATASET.launch
 rosbag play YOUR_BAG.bag
 ~~~
 
 
-## 4. Architecture and Feature Performance
-We present the network architectures of our deep event feature detector and descriptor matcher, along with visualizations demonstrating their performance in event feature detection and descriptor matching.
+## 4. Detection and Matching Performance
+We present the qualitative performance of our event detetor and descriptor matcher on multiple public datasets.
 
 <div align="center">
-    <img src="https://github.com/cpymaple/paper_pic/blob/main/supereio/super_eventpoint.png" width="49%" />
-    <img src="https://github.com/cpymaple/paper_pic/blob/main/supereio/feature_detection.png" width="49%" />
-    <p>The Architecture of Our Event Feature Detector and Comparison with Other Event-based Detector</p>
+    <img src="https://github.com/cpymaple/paper_pic/blob/main/supereio/feature_detection.png" width="80%" />
+    <p>Visual comparison of other event feature detectors, SuperPoint, and ours on multiple datasets with corresponding images. From top to bottom: DAVIS240C, Mono HKU, Stereo HKU, and VECtor.</p>
 </div>
 
 <div align="center">
-    <img src="https://github.com/cpymaple/paper_pic/blob/main/supereio/super_eventglue.png" width="49%" />
-    <img src="https://github.com/cpymaple/paper_pic/blob/main/supereio/descriptor_matching.png" width="49%" />
-    <p>The Architecture of Our Event Descriptor Matcher and Loop Closure Performance</p>
+    <img src="https://github.com/cpymaple/paper_pic/blob/main/supereio/descriptor_matching.png" width="80%" />
+    <p>Examples of our event descriptor matches in loop closure under boxes translation and hku agg translation sequences.</p>
 </div>
+
+
 
 ## 5. Video Demo
 We present video demo of our SuperEIO system, showcasing its visulization performance on both hdr_boxes and aggressive_flight scenarios.
@@ -93,19 +104,16 @@ SuperEIO is available in the [Arxiv](http://arxiv.org/abs/2503.22963).
 ~~~
 @article{SuperEIO,
   title={SuperEIO: Self-Supervised Event Feature Learning for Event Inertial Odometry},
-  author={Chen, Peiyu and Lin, Fuling and Guan, Weipeng and Lu, Peng},
-  journal={arXiv preprint arXiv:2503.22963},
-  year={2025}
+  author={Chen, Peiyu and Lin, Fuling and Guan, Weipeng and Luo, Yi and Lu, Peng},
+  journal={IEEE Transactions on Industrial Electronics},
+  year={2026}
 }
 ~~~
 
 If you feel like SuperEIO has indeed helped in your current research or work, a simple star or citation of our works should be the best affirmation for us. :blush: 
 
-## 7. Coming Soon
-The full codebase will be released upon paper acceptance. For immediate inquiries, please contact the authors.
-
-## 8. Acknowledgments 
+## 7. Acknowledgments 
 This work was supported by the General Research Fund under Grant 17204222, and in part by the Seed Fund for Collaborative Research and General Funding Scheme-HKU-TCL Joint Research Center for Artificial Intelligence. We gratefully acknowledge [sair-lab/AirSLAM](https://github.com/sair-lab/AirSLAM) for providing the Superpoint TensorRT acceleration template, which significantly enhanced the compute effiency of our system.
 
-## 9. License
+## 8. License
 The source code is released under the GPLv3 license. We are still working on improving the code reliability. If you are interested in our project for commercial purposes, please contact [Dr. Peng LU](https://arclab.hku.hk/People.html) for further communication.

@@ -248,23 +248,48 @@
         Besides, we evaluate our method extensively on multiple public datasets, demonstrating its superior accuracy and robustness compared to other state-of-the-art event-based methods.
         </div>
 
-        <h2 class="title is-2">Network Architecture</h2>
+        <h2 class="title is-2">Detection and Matching Performance</h2>
         <div class="content has-text-justified">
           <p>
-            The Architecture of Our Event Feature Detector and comparison with Other Event-based Detector
+            We present qualitative results of our event feature detector and descriptor matcher on multiple challenging datasets.
           </p>
         </div>
         <div class="content has-text-centered">
-          <img src="./static/img/feature_detection.png"/>
+          <img src="./static/img/feature_detection.png" width="80%"/>
         </div>
 
         <div class="content has-text-justified">
           <p>
-            The Architecture of Our Event Descriptor Matcher and Loop Closure Performance
+            Visual comparison of different event feature detectors, SuperPoint, and our method on multiple datasets with corresponding images. From top to bottom: DAVIS240C, Mono HKU, Stereo HKU, and VECtor.
           </p>
         </div>
+
         <div class="content has-text-centered">
-          <img src="./static/img/descriptor_matching.png"/>
+          <img src="./static/img/descriptor_matching.png" width="80%"/>
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            Examples of event descriptor matching results for loop closure on the <i>boxes_translation</i> and <i>hku_agg_translation</i> sequences.
+          </p>
+        </div>
+
+        <h2 class="title is-2">Video Demo</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present video demos of SuperEIO on the <i>hdr_boxes</i> and <i>aggressive_flight</i> sequences, showcasing its visualization performance in challenging scenarios.
+          </p>
+        </div>
+
+        <div class="content has-text-centered">
+          <img src="./static/img/Supereio240hdrboxes.gif" width="80%" />
+          <img src="./static/img/Supereioaggflight.gif" width="80%" />
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            Video demos of SuperEIO on the <i>hdr_boxes</i> and <i>aggressive_flight</i> sequences.
+          </p>
         </div>
 
       </div>
@@ -297,9 +322,9 @@
     <pre><code>
       @article{SuperEIO,
         title={SuperEIO: Self-Supervised Event Feature Learning for Event Inertial Odometry},
-        author={Chen, Peiyu and Lin, Fuling and Guan, Weipeng and Lu, Peng},
-        journal={arXiv preprint arXiv:2503.22963},
-        year={2025}
+        author={Chen, Peiyu and Lin, Fuling and Guan, Weipeng and Luo, Yi and Lu, Peng},
+        journal={IEEE Transactions on Industrial Electronics},
+        year={2026}
       }
     </code></pre>
   </div>

@@ -1,0 +1,29 @@
+<launch>
+    <arg name="config_path" default = "$(find event_detector)/../config/hku_stereo/davis346.yaml" />
+	  <arg name="vins_path" default = "$(find event_detector)/../config/../" />
+    <arg name="model_dir" default = "$(find event_detector)/src/output" />
+
+    <node name="event_detector" pkg="event_detector" type="event_detector" output="screen" respawn="true">
+        <param name="config_file" type="string" value="$(arg config_path)" />
+        <param name="vins_folder" type="string" value="$(arg vins_path)" />
+        <param name="model_dir" type="string" value="$(arg model_dir)" />
+        <param name="publish_framerate" type="double" value="60.0"/>
+    </node>
+
+    <node name="supereio_ba" pkg="supereio_ba" type="supereio_ba" output="screen" launch-prefix="gnome-terminal -x">
+       <param name="config_file" type="string" value="$(arg config_path)" />
+       <param name="vins_folder" type="string" value="$(arg vins_path)" />
+    </node>
+
+    <node name="loop_closure" pkg="loop_closure" type="loop_closure" output="screen" launch-prefix="gnome-terminal -x">
+        <param name="config_file" type="string" value="$(arg config_path)" />
+        <param name="visualization_shift_x" type="int" value="0" />
+        <param name="visualization_shift_y" type="int" value="0" />
+        <param name="skip_cnt" type="int" value="0" />
+        <param name="skip_dis" type="double" value="0" />
+        <param name="model_dir" type="string" value="$(arg model_dir)" />
+    </node>
+
+    <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log" launch-prefix="gnome-terminal -x" args="-d $(find supereio_ba)/../config/supereio_rviz.rviz" />
+
+</launch>

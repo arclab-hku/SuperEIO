@@ -1,0 +1,21 @@
+<!-- <launch>
+  <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/zhouyi/workspace/dataset/DVS/hkust_HDR/2020-07-14-12-38-42.bag
+          /home/zhouyi/workspace/dataset/DVS/hkust_HDR/hahaha.bag">
+  </node>
+</launch> -->
+
+<launch>
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/desk_fast_hku.bag
+          /home/cpy/desk_fast_events.bag">
+  </node> -->
+
+
+  <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/M3EDS/dvsplorer_ex_bag/dvx_plorer_imu_ex2.bag
+          /home/cpy/Datasets/M3EDS/dvsplorer_ex_bag/dvx_plorer_imu_ex2_new.bag">
+  </node>
+
+
+</launch>
